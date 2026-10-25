@@ -1,0 +1,36 @@
+# --- Web / API ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.8
+pydantic-settings>=2.4
+python-multipart>=0.0.9
+httpx>=0.27
+aiosqlite>=0.20
+
+# --- LangChain core ---
+langchain>=0.3
+langchain-core>=0.3.60
+langchain-community>=0.3
+langchain-text-splitters>=0.3
+
+# --- LLM providers (all optional at runtime; imported lazily) ---
+langchain-openai>=0.3          # OpenAI + OpenRouter (OpenAI-compatible)
+langchain-anthropic>=0.3
+langchain-google-genai>=2.1
+langchain-deepseek>=0.1
+langchain-xai>=0.2
+langchain-groq>=0.3
+langchain-ollama>=0.3
+
+# --- LangGraph ---
+langgraph>=0.4
+langgraph-checkpoint-sqlite>=2.0
+
+# --- RAG ---
+langchain-chroma>=0.2
+chromadb>=0.5
+pypdf>=4.3
+
+# --- Tools ---
+ddgs>=9.0
+beautifulsoup4>=4.12
