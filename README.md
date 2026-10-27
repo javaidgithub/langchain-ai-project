@@ -11,9 +11,10 @@
 ![LangGraph](https://img.shields.io/badge/LangGraph-1.x-1C3C3C)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+[![Docs](https://img.shields.io/badge/docs-live-teal?logo=materialformkdocs)](https://javaidgithub.github.io/langchain-ai-project)
 
 </div>
-
+> 📚 **[Full Documentation →](https://javaidgithub.github.io/langchain-ai-project)**
 ---
 
 ## Contents
