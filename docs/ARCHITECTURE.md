@@ -1,6 +1,6 @@
 # Architecture
 
-This document explains the decisions behind the project. For setup and usage see the [README](../README.md).
+This document explains the decisions behind the project. For setup and usage see the [README](index.md).
 
 ## Layers
 

@@ -1,0 +1,124 @@
+site_name: LangChain AI Project
+site_description: Full-stack AI agent platform — LangChain, LangGraph, multi-provider LLMs, agentic RAG, human-in-the-loop, streaming UI
+site_url: https://javaidgithub.github.io/langchain-ai-project
+site_author: Javaid
+repo_name: javaidgithub/langchain-ai-project
+repo_url: https://github.com/javaidgithub/langchain-ai-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: guides/quickstart.md
+    - Configuration: guides/configuration.md
+    - First Conversation: guides/first-conversation.md
+    - Docker Deployment: guides/docker.md
+  - Concepts:
+    - Overview: concepts/overview.md
+    - LangChain Core: concepts/langchain-core.md
+    - LCEL Chains: concepts/lcel-chains.md
+    - LangGraph Agents: concepts/langgraph-agents.md
+    - Human-in-the-Loop: concepts/human-in-the-loop.md
+    - RAG — Document Intelligence: concepts/rag.md
+    - Context Management: concepts/context-management.md
+    - Tools & Registry: concepts/tools.md
+    - LLM Providers: concepts/providers.md
+    - Memory — Short & Long Term: concepts/memory.md
+    - Streaming & SSE: concepts/streaming.md
+    - Callbacks & Observability: concepts/callbacks.md
+  - API Reference:
+    - REST Endpoints: api/endpoints.md
+    - Stream Events: api/stream-events.md
+    - Request Schemas: api/schemas.md
+  - Internals:
+    - Architecture: ARCHITECTURE.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/javaidgithub
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Yes
+          data: 1
+          note: Thanks for the feedback!
+        - icon: material/thumb-down-outline
+          name: No
+          data: 0
+          note: Thanks! Let us know how we can improve.
+
+copyright: Copyright &copy; 2026 Javaid — MIT License
